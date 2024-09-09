@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Autoservis</string>
+    <string name="title_activity_login">Prijavi se</string>
+    <string name="username">E-mail adresa</string>
+    <string name="password">Lozinka</string>
+    <string name="login">Prijavi se</string>
+    <string name="niste_registrirani">Nemate korisnički račun?</string>
+    <string name="registriraj_se">REGISTRIRAJ SE</string>
+    <string name="imate_kor_racun">Imate korisnički račun?</string>
+    <string name="prijavite_se">PRIJAVI SE</string>
+    <string name="ime">Ime</string>
+    <string name="prezime">Prezime</string>
+    <string name="lozinka">Lozinka</string>
+    <string name="ponovi_lozinku">Ponovi lozinku</string>
+    <string name="zaboravili_ste_lozinku">Zaboravili ste lozinku?</string>
+    <string name="restartajte_lozinku">POŠALJI MOJU LOZINKU</string>
+    <string name="upisite_svoju_e_mail_adresu">Upišite svoju e-mail adresu:</string>
+    <string name="novi_putni_nalog">Novi putni nalog</string>
+    <string name="moji_putni_nalozi">Moji putni nalozi</string>
+    <string name="potvrdi_putne_naloge">Pregledaj putne naloge</string>
+    <string name="odjavi_se">Odjavi se</string>
+    <string name="select">Odaberi Radnika</string>
+    <string name="select2">Odaberi Razlog Odbijanja</string>
+</resources>

@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/black"
+    tools:context=".RezervacijaUpisPodatakaAdmin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            android:layout_marginEnd="20dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+
+
+                <TextView
+                    android:id="@+id/ime_i_prezime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="0dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Datum:"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/dan"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="65dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="Broj rezervacije:"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/brojRezervacije"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginStart="135dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/broj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginStart="120dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    />
+
+
+                <TextView
+                    android:layout_marginTop="130dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Datum Primanja:"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/datum_primanja"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginStart="140dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    />
+
+                <Button
+                    android:id="@+id/datum_primanja_button"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="ODABERITE DATUM"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:background="#FF9800" />
+
+                <TextView
+                    android:layout_marginTop="210dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Datum Zavrsetka:"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/datum_zavrsetka"
+                    android:layout_marginTop="210dp"
+                    android:layout_marginStart="150dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    />
+
+                <Button
+                    android:id="@+id/datum_zavrsetka_button"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="240dp"
+                    android:layout_height="wrap_content"
+                    android:text="ODABERITE DATUM"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:background="#FF9800" />
+
+                <TextView
+                    android:layout_marginTop="100dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Broj Telefona:"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auto:"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="356dp"
+                android:layout_height="5dp"
+                app:errorEnabled="true" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Upišite marku i ime automobila "
+                android:textColorHint="@color/white"
+                android:inputType="textCapWords">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Godina Proizvodnje:"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                app:errorEnabled="true" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/godina_proizvodnje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Upišite godinu proizvodnje automobila"
+                android:textColorHint="@color/white"
+                android:inputType="number"
+                app:errorEnabled="true">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Broj šasije:"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                app:errorEnabled="true" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/broj_sasije"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Upišite broj šasije automobila"
+                android:textColorHint="@color/white"
+                android:inputType="textCapCharacters"
+                app:errorEnabled="true">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Što treba popraviti?"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                app:errorEnabled="true" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/popravak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Upišite što treba popraviti na automobilu"
+                android:textColorHint="@color/white"
+                android:inputType="textCapSentences|textMultiLine">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Radnik:"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="@string/select"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/radnik"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="361dp"-->
+<!--                android:layout_height="11dp"-->
+<!--                app:errorEnabled="true" />-->
+
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/radnik"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="53dp"-->
+<!--                android:hint="Upišite radnika"-->
+<!--                android:inputType="textCapWords"-->
+<!--                android:textColorHint="@color/white">-->
+
+<!--            </com.google.android.material.textfield.TextInputEditText>-->
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Radni sati:"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                app:errorEnabled="true" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/radni_sati"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Upišite radne sate"
+                android:textColorHint="@color/white"
+                android:inputType="number">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cijena radova:"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/cijenaRadova"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:inputType="number"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cijena dijelova:"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                app:errorEnabled="true" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cijenaDjelova"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:hint="Upišite cijenu dijelova"
+                android:textColorHint="@color/white"
+                android:inputType="phone">
+
+            </com.google.android.material.textfield.TextInputEditText>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ukupna cijena:"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/cijena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:inputType="number"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+
+
+
+
+
+
+
+            <ProgressBar
+
+                android:id="@+id/loading"
+                android:layout_width="84dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="5dp"
+                android:indeterminate="true" />
+
+            <Button
+                android:id="@+id/posalji"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#A50A0A"
+                android:gravity="center"
+                android:enabled="false"
+                android:text="Pošalji Rezervaciju"
+                android:textColor="@color/white">
+
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/izađi"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A50A0A"
+                android:gravity="center"
+                android:text="Izađi"
+                android:textColor="@color/white">
+
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

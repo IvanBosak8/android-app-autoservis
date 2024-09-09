@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Autoservis"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".RecenzijeDetalji"
+            android:exported="false" />
+        <activity
+            android:name=".Recenzije"
+            android:exported="false" />
+        <activity
+            android:name=".RecenzijaUpis"
+            android:exported="false" />
+        <activity
+            android:name=".ServisDetalji"
+            android:exported="false" />
+        <activity
+            android:name=".Servis"
+            android:exported="false" />
+        <activity
+            android:name=".UpisZaposlenika"
+            android:exported="false" />
+        <activity
+            android:name=".ZaposleniciDetalji"
+            android:exported="false" />
+        <activity
+            android:name=".Zaposlenici"
+            android:exported="false" />
+        <activity
+            android:name=".NedovrseneRezervacijeDetalji"
+            android:exported="false" />
+        <activity
+            android:name=".NedovrseneRezervacije"
+            android:exported="false" />
+        <activity
+            android:name=".nedovrseno"
+            android:exported="false" />
+        <activity
+            android:name=".RezervacijaUpisPodatakaAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".PregledRezervacijeDetalji"
+            android:exported="false" />
+        <activity
+            android:name=".PregledRezervacije"
+            android:exported="false" />
+        <activity
+            android:name=".RezervacijaDetalji"
+            android:exported="false" />
+        <activity
+            android:name=".AdapterSveRezervacije"
+            android:exported="false" />
+        <activity
+            android:name=".PregledajSveRezervacije"
+            android:exported="false" />
+        <activity
+            android:name=".RezervacijaUpisPodatakaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MojeRezervacije"
+            android:exported="false" />
+        <activity
+            android:name=".UserHomeUI"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHomeUI"
+            android:exported="false" />
+        <activity
+            android:name=".LozinkaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistracijaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

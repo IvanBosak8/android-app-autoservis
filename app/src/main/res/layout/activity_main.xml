@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="35dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="10dp"
+            app:errorEnabled="true">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edittext_username"
+                android:layout_width="336dp"
+                android:layout_height="56dp"
+                android:hint="E-mail adresa"
+                android:textColor="@color/white"
+                android:inputType="textEmailAddress" />
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="35dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="10dp"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="false">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="265dp"
+                android:layout_marginTop="-62dp"
+                android:id="@+id/imageView_show_hide_pass"
+                />
+
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textPassword"
+                android:layout_width="334dp"
+                android:layout_height="60dp"
+                android:hint="Lozinka"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ProgressBar
+
+            android:id="@+id/loading"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="20dp"
+            android:indeterminate="true" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zaboravili ste lozinku?"
+
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textview_zaboravili_ste_lozinku"
+            android:layout_width="225dp"
+            android:layout_height="match_parent"
+            android:paddingStart="50dp"
+            android:paddingEnd="10dp"
+            android:text="POŠALJI MOJU LOZINKU"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nemate korisnički račun?"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="174dp"
+            android:layout_height="match_parent"
+            android:paddingStart="30dp"
+            android:paddingEnd="10dp"
+            android:text="REGISTRIRAJ SE"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="30dp"
+        android:background="#ff0000"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Prijavi se"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/recenzije"
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        android:paddingStart="120dp"
+        android:paddingTop="200dp"
+        android:paddingEnd="100dp"
+        android:text="POGLEDAJTE RECENZIJE"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
